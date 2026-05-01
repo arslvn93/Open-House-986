@@ -1,4 +1,4 @@
-window.config = {
+const config = {
   "property": {
     "streetAddress": "54 Moberly",
     "city": "Toronto",
@@ -9,14 +9,14 @@ window.config = {
   "realtor": {
     "fullName": "Daniel Losier",
     "title": "REALTOR®",
-    "phone": "4164186470",
+    "phone": "647-557-8052",
     "email": "daniel@erbaandco.com",
     "photoUrl": "https://salesgenius.s3.ca-central-1.amazonaws.com/uploads/upload-Dan-Losier.jpg",
     "bio": "Professional real estate agent dedicated to helping you find your perfect home.",
     "social": {
       "facebook": "https://www.facebook.com/erbaandco/",
       "instagram": "https://www.instagram.com/erba.and.co",
-      "website": "#"
+      "website": "https://erbaandco.com/"
     }
   },
   "brokerage": {
@@ -27,22 +27,19 @@ window.config = {
   "openHouse": {
     "eventDate": "",
     "bundleItems": [
-            {
-                  "icon": "fas fa-vr-cardboard",
-                  "text": "3D Virtual Tour",
-                  "url": "https://www.dropbox.com/scl/fo/fsbcc3ikl4rs8bvvshqvl/AL47j60e3vnTNQKrMA0_YgU/Cinematic%20Videos?rlkey=wfv452r9r8hd6ohlx4kq1lncu&subfolder_nav_tracking=1&st=zi5t2xb1&dl=0"
-            },
-            {
-                  "icon": "fas fa-ruler-combined",
-                  "text": "Architectural Floor Plan",
-                  "url": "https://www.dropbox.com/scl/fo/ijroxxi6eob3j0jzjjmq0/AIhJPjn_0ymhNV2F4HFKtag?rlkey=y3mo6jgedj1txg97zt39i09kk&st=vrxe5j7p&dl=0"
-            },
-            {
-                  "icon": "fas fa-video",
-                  "text": "Video Tour",
-                  "url": "https://youtu.be/FRDZubf7XFI"
-            }
-      ]
+      {
+        "icon": "fas fa-vr-cardboard",
+        "text": "3D Virtual Tour"
+      },
+      {
+        "icon": "fas fa-ruler-combined",
+        "text": "Architectural Floor Plan"
+      },
+      {
+        "icon": "fas fa-video",
+        "text": "Video Tour"
+      }
+    ]
   },
   "meta": {
     "pageTitlePrefix": "🏡 Daniel Losier Open House",
@@ -50,7 +47,7 @@ window.config = {
     "privacyPolicyLink": "https://erbaandco.com/privacy-policy/"
   },
   "settings": {
-   "primaryColor": "",
+    "primaryColor": "",
     "secondaryColor": "",
     "accentColor": "",
     "neutralColor": "",
@@ -65,46 +62,91 @@ window.config = {
     ]
   },
   "modalQuestions": [
-  {
-    "id": "q_auto_1750445840887_0",
-    "questionText": "What's your current situation?",
-    "options": [
-      { "value": "I own my home", "text": "I own my home" },
-      { "value": "I rent", "text": "I rent" },
-      { "value": "Live with family/friends", "text": "Live with family/friends" },
-      { "value": "Between homes", "text": "Between homes" }
-    ]
-  },
-  {
-    "id": "q_auto_1750445840887_1",
-    "questionText": "What are you looking to do?",
-    "options": [
-      { "value": "Buy a home", "text": "Buy a home" },
-      { "value": "Sell and buy", "text": "Sell and buy" },
-      { "value": "Rent a place", "text": "Rent a place" },
-      { "value": "Invest in property", "text": "Invest in property" }
-    ]
-  },
-  {
-    "id": "q_auto_1750445840887_2",
-    "questionText": "When are you planning to move?",
-    "options": [
-      { "value": "ASAP", "text": "ASAP" },
-      { "value": "3-6 months", "text": "3-6 months" },
-      { "value": "6-12 months", "text": "6-12 months" },
-      { "value": "12+ months", "text": "12+ months" }
-    ]
-  },
-  {
-    "id": "agent_status",
-    "questionText": "Are you currently exploring homes with a real estate agent?",
-    "options": [
-      { "value": "committed", "text": "Yes, I'm committed to an agent." },
-      { "value": "not_committed", "text": "No, I'm not committed to an agent." },
-      { "value": "gathering_info", "text": "Just gathering information at this stage." }
-    ]
-  }
-],
+    {
+      "id": "q_auto_1750445840887_0",
+      "questionText": "What's your current situation?",
+      "options": [
+        {
+          "value": "I own my home",
+          "text": "I own my home"
+        },
+        {
+          "value": "I rent",
+          "text": "I rent"
+        },
+        {
+          "value": "Live with family/friends",
+          "text": "Live with family/friends"
+        },
+        {
+          "value": "Between homes",
+          "text": "Between homes"
+        }
+      ]
+    },
+    {
+      "id": "q_auto_1750445840887_1",
+      "questionText": "What are you looking to do?",
+      "options": [
+        {
+          "value": "Buy a home",
+          "text": "Buy a home"
+        },
+        {
+          "value": "Sell and buy",
+          "text": "Sell and buy"
+        },
+        {
+          "value": "Rent a place",
+          "text": "Rent a place"
+        },
+        {
+          "value": "Invest in property",
+          "text": "Invest in property"
+        }
+      ]
+    },
+    {
+      "id": "q_auto_1750445840887_2",
+      "questionText": "When are you planning to move?",
+      "options": [
+        {
+          "value": "ASAP",
+          "text": "ASAP"
+        },
+        {
+          "value": "3-6 months",
+          "text": "3-6 months"
+        },
+        {
+          "value": "6-12 months",
+          "text": "6-12 months"
+        },
+        {
+          "value": "12+ months",
+          "text": "12+ months"
+        }
+      ]
+    },
+    {
+      "id": "agent_status",
+      "questionText": "Are you currently exploring homes with a real estate agent?",
+      "options": [
+        {
+          "value": "committed",
+          "text": "Yes, I'm committed to an agent."
+        },
+        {
+          "value": "not_committed",
+          "text": "No, I'm not committed to an agent."
+        },
+        {
+          "value": "gathering_info",
+          "text": "Just gathering information at this stage."
+        }
+      ]
+    }
+  ],
   "deploymentInfo": {
     "repoId": "1220084607",
     "repoName": "Open-House-986",
