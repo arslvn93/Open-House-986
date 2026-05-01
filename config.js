@@ -152,7 +152,7 @@ const config = {
     "repoName": "Open-House-986",
     "crmLeadParsingEmail": "daniel.losier@followupboss.me",
     "tag": "Open House 54 Moberly",
-    "netlifyUrl": "https://services.leadconnectorhq.com/hooks/KxSrsX5ZH2ZttFjyt9hW/webhook-trigger/723v7Nh8JC60wCn3aRmV",
+    "netlifyUrl": "https://services.leadconnectorhq.com/hooks/xg4Egm27GPiTwOuGMgad/webhook-trigger/qiDJi5ClJ1cWyphbVY4X",
     "sgApiKey": "api_d6d1f9b8513ce7e329d4f61edbc210fe"
   }
 };
